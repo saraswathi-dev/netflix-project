@@ -1,84 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-    <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/netflix-icon-1060x2048-q6kj8tr8.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/netflix-icon-1060x2048-q6kj8tr8.png"
+        type="image/x-icon">
     <style>
         /*body*/
-        body
-        {
+        body {
             background-image: url(https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY-650-80.jpg.webp);
+            background-color: rgba(0, 0, 0, 0.699);
             background-size: cover;
             font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
             font-size: 16px;
             color: rgb(255, 255, 255);
             position: relative;
             align-items: center;
+            margin: 0;
         }
+
         /*id*/
-        #sign_in_box
-        {
+        #sign_in_box {
             border: 2px solid;
             border-width: 0cm;
-            background-color: rgb(19, 3, 3) ;
+            background-color: rgb(0 0 0 / 94%);
             opacity: 0.9;
-            max-width: 450px;
+            width: 350px;
+            min-width: 300px;
+            max-width: 400px;
             margin: auto;
-            padding:2%;
-            align-items: center;  
+            padding: 50px 50px;
+            line-height: 25px;
         }
-        #netflix
+
+        #header-div 
         {
-            color: #e50914;
-            font-size: 25px;
-            font-palette: inherit;   
+            position: relative;
+            width: inherit;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            margin: auto 118px;
         }
-        #sign_in
+
+        #netflix 
         {
-            background-color:red;  
-            margin: 8px;
+            background-color: #0000005c;
         }
-        #footer
-        {
+
+
+        #submit_button {
+            width: 100%;
+            height: 40px;
+            background-color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+
+        #input_fields {
+            position: relative;
+            display: grid;
+        }
+
+
+        #sign_in {
+            display: flex;
+        }
+
+        #footer {
             border: 0cm;
             align-items: last baseline;
         }
+
+        .input_field {
+            width: -webkit-fill-available;
+            line-height: 3.5;
+            margin: 13px 0px;
+            background-color: #000000ed;
+            border: 1px solid gray;
+            border-radius: 4px;
+            padding: 3px 15px;
+            color: #ffff;
+        }
+
+        footer {
+            width: 80%;
+            margin: auto;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            margin-top: 4.5rem;
+            margin-bottom: 4.5rem;
+        }
+
+        #list {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            width: inherit;
+            height: inherit;
+            margin-top: -1rem;
+            margin-left: -0.75rem;
+            width: calc(100% + 0.75rem);
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            padding: 0px;
+
+        }
+
+        #list 
+        li {
+            flex: 0 0 calc(25% - 0.75rem);
+            margin-top: 1rem;
+            margin-left: 0.75rem;
+            list-style-type: none;
+        }
+
+        #list li a {
+            color: rgba(255, 255, 255, 0.7);
+            border-radius: 0.125rem;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            background: none;
+            border-radius: 0;
+            border: 0;
+            box-sizing: content-box;
+            color: inherit;
+            cursor: default;
+            display: inline;
+            font: inherit;
+            letter-spacing: inherit;
+            line-height: inherit;
+            margin: 0;
+            padding: 0;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            /* color: blue; */
+            cursor: pointer;
+            -webkit-text-decoration: underline;
+            text-decoration: underline;
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+            list-style-type: disc;
+        }
     </style>
 </head>
+
 <body>
-   <div id="netflix"> <header><h1><b>NETFLIX</b></h1></header></div>
-    <form action="">
-       <div id="sign_in_box">
-       <div id="Sign_in"><h1>Sign In</h1></div>
-       <div id="email"><input type="email"  placeholder="email or phone number" id="" ></div><br>
-       <div id="password"><input type="password"  placeholder="password" id=""></div><br>
-      <div id="sign_in"> <input type="submit" value="Sign In"></div>
-      <p>Forgot password?</p>
-      <input type="checkbox" name="" id="remember me" value="">
-      <label for="remember me">Remember me</label>
-      <p>New to Netflix? <b>Sign up now</b></p>
-      <p>This page is protected by Google reCAPTHA to <br> ensure you're not a bot. <a href="">Learn more.</a></p></div>
-    </form>
-    <footer>
-        <div id="footer">
-            <p>Questions? Call<a href="tel:000-800-919-1694"> 000-800-919-1694</a></p>
-            <table id="table">
-                <tr>
-                    <td><div><a href="">FAQ</a></div><span></span></td>
-                    <td><div><a href="">Help Center</a></div></td>
-                    <td><div><a href="">Terms of Use</a></div></td>
-                    <td><div><a href="">Privacy</a></div></td>
-                    
-                </tr>
-                <tr>
-                    <td> <div><a href="">CookiePreferences</a></div></td>
-                    <td><div><a href="">Corporate Information</a></div></td>
-                </tr>
-            </table>
-        </div>
-    </footer>
-    
+    <div id="netflix">
+        <header>
+            <div id="header-div">
+                <h1>
+                    <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                        class="default-ltr-cache-1d568uk ev1dnif2" style="
+                    width: 9.25rem;
+                    height: 2.5rem;
+                    color: rgb(229, 9, 20);
+                    fill: currentColor;
+                    display: block;">
+                        <g>
+                            <path
+                                d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z">
+                            </path>
+                        </g>
+                    </svg>
+                </h1>
+            </div>
+        </header>
+
+        <form action="">
+            <div id="sign_in_box">
+                <div id="sign_in">
+                    <h1>Sign In</h1>
+                </div>
+                <div id="input_fields">
+                    <div class="input-box">
+                        <label for="email">Email or phone number</label>
+                        <input class="input_field" type="email" placeholder="Email or phone number" id="email">
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <input class="input_field" type="password" placeholder="Password" id="password">
+                    </div>
+                    <div class="submit-button-box">
+                        <input id="submit_button" type="submit" value="Sign In">
+                    </div>
+
+                </div>
+                <p>Forgot password?</p>
+                <input type="checkbox" name="" id="remember me" value="">
+                <label for="remember me">Remember me</label>
+                <p>New to Netflix? <a href="" style="color: #ffff;"><b>Sign up now</b></a></p>
+                <p>This page is protected by Google reCAPTHA to <br> ensure you're not a bot. <a href="">Learn more.</a>
+                </p>
+            </div>
+        </form>
+        <footer>
+            <div id="footer">
+                <p>Questions? Call<a href="tel:000-800-919-1694" style="color: #ffff;"> 000-800-919-1694</a></p>
+                <ul id="list">
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">CookiePreferences</a></li>
+                    <li><a href="">Corporate Information</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
 </body>
+
 </html>
